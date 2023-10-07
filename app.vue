@@ -3,7 +3,7 @@
     <h1 class="title text-center my-6 font-bold">Casey Wittner</h1>
     <div class="grid md:grid-cols-4 xs:grid-cols-1 gap-4 mb-4">
       <div class="md:col-start-2 md:col-span-2">
-        <div class="bg-red-500 text-sm text-white rounded-md p-4 text-center" role="alert">
+        <div class="hazard-stripes text-sm text-white rounded-md p-4 text-center" role="alert">
           <p><strong>Under Construction</strong></p>
           <p>Pardon my dust! This website is currently under construction and will be expanded soon.</p>
         </div>
@@ -82,6 +82,9 @@ export default {
 </script>
 
 <style>
+body {
+  min-height: 100vh;
+}
 .title {
   font-size: 48px;
   font-family: Roboto Condensed, sans-serif
@@ -91,5 +94,15 @@ body {
   background: radial-gradient(ellipse at bottom left, #61DBFB 0, transparent 25%),
   radial-gradient(ellipse at bottom right, #00DC82 0, transparent 25%);
 
+}
+.hazard-stripes {
+  background: repeating-linear-gradient(
+      45deg,
+      #a9a357,
+      #beac04 30px,
+      #252424 30px,
+      #020202 60px
+  );
+  text-shadow: 1px 1px 2px black;
 }
 </style>

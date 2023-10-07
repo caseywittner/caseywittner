@@ -12,7 +12,6 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/google-fonts": "^3.0.2",
-    "netlify-cli": "^16.5.1",
     "nuxt": "^3.7.4"
   },
   "dependencies": {

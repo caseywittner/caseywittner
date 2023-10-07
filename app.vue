@@ -3,12 +3,26 @@
     <h1 class="title text-center my-6 font-bold">Casey Wittner</h1>
     <div class="grid md:grid-cols-4 xs:grid-cols-1 gap-4 mb-4">
       <div class="md:col-start-2 md:col-span-2">
-        <div class="bg-orange-500 text-sm text-white rounded-md p-4 text-center" role="alert">
+        <div class="bg-red-500 text-sm text-white rounded-md p-4 text-center" role="alert">
           <p><strong>Under Construction</strong></p>
           <p>Pardon my dust! This website is currently under construction and will be expanded soon.</p>
         </div>
       </div>
     </div>
+    <nav class="flex space-x-6">
+      <a class="py-4 px-1 inline-flex items-center gap-2 text-sm whitespace-nowrap text-blue-500 hover:text-blue-700" target="_blank" href="https://www.linkedin.com/in/casey-wittner-10655a39/">
+        LinkedIn
+      </a>
+      <a class="py-4 px-1 inline-flex items-center gap-2 text-sm whitespace-nowrap text-blue-500 hover:text-blue-700" target="_blank" href="https://github.com/caseywittner">
+        GitHub
+      </a>
+      <a class="py-4 px-1 inline-flex items-center gap-2 text-sm whitespace-nowrap text-blue-500 hover:text-blue-700" href="mailto: casey.wittner@gmail.com">
+        Email
+      </a>
+      <a class="py-4 px-1 inline-flex items-center gap-2 text-sm whitespace-nowrap text-blue-500 hover:text-blue-700" href="tel:9144390906">
+        Phone
+      </a>
+    </nav>
     <div class="grid md:grid-cols-3 xs:grid-cols-1 gap-4 mb-4">
       <div class="col-span-1" v-for="card in cards">
         <card :title="card.title" :text="card.text" :img="card.img" />
@@ -74,5 +88,8 @@ export default {
 }
 body {
   font-family: Roboto, sans-serif;
+  background: radial-gradient(ellipse at bottom left, #61DBFB 0, transparent 25%),
+  radial-gradient(ellipse at bottom right, #00DC82 0, transparent 25%);
+
 }
 </style>
